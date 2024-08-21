@@ -1,6 +1,6 @@
 # **Hosting a Static Website on Amazon S3**
 
-## Scenario
+## Scenario 2
 
 As a junior DevOps engineer, explain how you would host a static website in an Amazon S3 bucket. Describe the steps in **configuring the S3 bucket for website hosting, uploading the static website files, setting permissions, and enabling static website hosting**. Additionally, discuss any considerations for **domain configuration and CDN integration** to enhance website performance. After proper research, provide an architectural diagram and host a sample static website in an Amazon S3 Bucket following the solutions and steps you have come up with.
 
@@ -55,15 +55,15 @@ As a junior DevOps engineer, explain how you would host a static website in an A
     - Set caching behavior and TTLs.
     - Update your DNS record to point to the CloudFront distribution (like above but pointing to the Cloudfront distribution URL).
 
-![CNAME Record Configuration](images/cname-config.png) <br>
+![CNAME Record Configuration](images/cname-config.png)
 ![Cloudfront Distribution With S3-Origin](images/cloudfront-distr.png)
 
 ## Sample Architectural Diagram
 
 Here's a simplified diagram of the setup:
 
-```
+```markdown
 User Browser <-> CloudFront <-> S3 Bucket (keyboard-gen)
 ```
 
-![System Deployment Architecture In Visio](images/system-deployment-archi.vsdx)
+![System Deployment Architecture In Visio](images/visio.png)
